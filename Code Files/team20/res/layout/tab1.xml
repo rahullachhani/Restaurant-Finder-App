@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		        android:id="@+id/scrollView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" 
+		        android:scrollbars="vertical"
+		        android:background="@drawable/bg" >
+
+      <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+     >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:orientation="horizontal" >
+
+              <TextView
+                  android:id="@+id/textView4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:layout_marginBottom="6dp"
+                	android:layout_marginLeft="7dp"
+                  android:text="Monginis"
+                  android:layout_weight="0.60"
+                  android:textColor="@color/Red"
+                  android:textSize="24sp" />
+                <TextView
+                  android:id="@+id/view3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 
+              
+               android:layout_marginBottom="2dp"
+                 
+                  android:textSize="15sp" 
+                  android:layout_gravity="center"
+                 />
+
+          <!--    <ImageView
+                  android:id="@+id/view3"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_weight="0.25"
+                
+                   />
+ --> 
+          </LinearLayout>
+    
+     <FrameLayout 
+		    android:layout_width="530dp"
+		    android:layout_height="250dp"
+		    android:background="@drawable/img_out"
+		    android:layout_gravity="center"
+		    >
+		    <RelativeLayout
+    android:id="@+id/loadingPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+</RelativeLayout>
+ <ViewFlipper android:id="@+id/imageButton4" 
+		android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+       
+		android:autoStart="true"
+		android:flipInterval="3000"
+		> 
+	</ViewFlipper>
+	<!-- 
+  <FrameLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	android:layout_gravity="right|top"
+		    android:gravity="top"
+		    
+		  
+		    >
+	   <ImageView
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+       android:layout_marginTop="-15dp"
+        android:layout_gravity="top"
+        android:background="@drawable/close"
+                
+           />
+	    
+	 	 </FrameLayout>
+ 
+  -->
+ 
+		    </FrameLayout>
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="70dp"
+         android:layout_margin="10dp"
+         android:orientation="horizontal" >
+
+         <ToggleButton
+             android:id="@+id/ib1"
+             style="@style/myToggle"
+             android:layout_width="30dp"
+             android:layout_height="40dp"
+             android:layout_gravity="left|center_vertical"
+             android:layout_marginBottom="0dp" />
+
+         <TextView
+             android:id="@+id/like"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="8dp"
+             android:text="5 Likes"
+             android:textSize="15sp" />
+         
+          <ToggleButton
+             android:id="@+id/ib2"
+             style="@style/myToggle1"
+             android:layout_width="30dp"
+             android:layout_marginLeft="10dp"
+             android:layout_height="40dp"
+             android:layout_gravity="left|center_vertical"
+             android:layout_marginBottom="0dp"
+             />
+
+         <TextView
+             android:id="@+id/dislike"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="8dp"
+             android:text="5 Dislikes"
+             android:textSize="15sp" />
+         
+         <ImageButton
+            android:layout_marginLeft="30dp"  
+                 android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:id="@+id/wishlist"
+                  android:layout_gravity="center_vertical"
+                     android:background="@drawable/wishlistbutton"
+                  />
+         
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+        
+        style="@style/Divider"
+      />
+     <LinearLayout 
+         
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+          android:id="@+id/laddress"
+         android:orientation="vertical"
+         
+         
+         >
+         
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView5"
+             android:text="Address:"
+             android:textSize="20sp"
+             android:textColor="@color/Red"
+             
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView6"
+             android:text="202,Aatam Dham,Chopra Court,Ulhasnagar-3"
+             android:textSize="20sp"
+             android:layout_marginTop="5dp"
+             />
+         
+         <View
+         android:layout_width="match_parent"
+         android:layout_marginTop="7dp"
+        
+        style="@style/Divider"
+      />
+         
+     </LinearLayout>
+     
+     
+     <LinearLayout 
+         
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+          android:id="@+id/ldistance"
+         android:orientation="vertical"
+         
+         
+         >
+         
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView8"
+             android:text="Distance:"
+             android:textSize="20sp"
+             android:textColor="@color/Red"
+             
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView9"
+             android:text="500 m"
+             android:textSize="20sp"
+             android:layout_marginTop="5dp"
+             />
+         
+         <View
+         android:layout_width="match_parent"
+         android:layout_marginTop="7dp"
+        
+        style="@style/Divider"
+      />
+         
+     </LinearLayout>
+     
+     
+      <LinearLayout 
+         
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+          android:id="@+id/ltime"
+         android:orientation="vertical"
+         
+         
+         >
+         
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView19"
+             android:text="Open Timings:"
+             android:textSize="20sp"
+             android:textColor="@color/Red"
+             
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView20"
+             android:text="9:00 - 12:00"
+             android:textSize="20sp"
+             android:layout_marginTop="5dp"
+             />
+         
+         <View
+         android:layout_width="match_parent"
+         android:layout_marginTop="7dp"
+        
+        style="@style/Divider"
+      />
+         
+     </LinearLayout>
+     
+       <LinearLayout 
+         
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:id="@+id/lprice"
+         android:orientation="vertical"
+         
+         
+         >
+         
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView11"
+             android:text="Price Level:"
+             android:textSize="20sp"
+             android:textColor="@color/Red"
+             
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView12"
+             android:text="Moderate"
+             android:textSize="20sp"
+             android:layout_marginTop="5dp"
+             />
+         
+         <View
+         android:layout_width="match_parent"
+         android:layout_marginTop="7dp"
+        
+        style="@style/Divider"
+      />
+         
+     </LinearLayout>
+     
+	 <LinearLayout 
+         
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+          android:id="@+id/lweb"
+         android:orientation="vertical"
+         
+         
+         >
+         
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView13"
+             android:text="Website"
+             android:textSize="20sp"
+             android:textColor="@color/Red"
+             
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView14"
+             android:text="www.google.com"
+             android:textSize="20sp"
+  
+             android:layout_marginTop="5dp"
+             />
+         
+         <View
+         android:layout_width="match_parent"
+         android:layout_marginTop="7dp"
+        
+        style="@style/Divider"
+      />
+         
+     </LinearLayout>
+     
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+         
+          
+           >
+           
+            <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                  android:id="@+id/call"
+                    android:padding="5dp"
+                     android:layout_margin="15dp"
+                  android:layout_weight="1"
+                    android:textSize="15sp"
+                  android:layout_marginBottom="10dp"
+                   
+                  android:layout_gravity="center_vertical"
+                     android:background="@drawable/call_button"
+                     
+                />
+         <ImageButton
+                   android:layout_width="40dp"
+                    android:layout_height="50dp"
+                   android:layout_margin="15dp"
+                    android:padding="5dp"
+                   android:layout_marginBottom="10dp"
+                    android:id="@+id/button1"
+                  android:layout_weight="1"
+                    android:textSize="15sp"
+                  android:layout_gravity="center_vertical"
+                     android:background="@drawable/booktable"
+                   />
+         
+           
+           
+      </LinearLayout>
+       
+       </LinearLayout>
+</ScrollView>

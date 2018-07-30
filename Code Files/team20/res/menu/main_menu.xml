@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- Refresh -->
+    <item android:id="@+id/action_refresh"
+          android:icon="@drawable/refresh"
+          android:title="Refresh"
+          android:titleCondensed="true"
+          android:showAsAction="always"
+    />
+    <item
+    android:id="@+id/mennu"
+    android:icon="@drawable/dropdown"
+    android:showAsAction="always"
+    android:title="menu">
+    <menu>
+    <item android:id="@+id/sort"
+         android:title="Sort"
+         android:icon="@drawable/sort" 
+         android:showAsAction="always"
+          />
+    <item android:id="@+id/filter"
+          android:icon="@drawable/filter"
+          android:title="Filter" 
+          android:showAsAction="always"/>
+    
+    
+    </menu>
+</item>
+    
+
+</menu>

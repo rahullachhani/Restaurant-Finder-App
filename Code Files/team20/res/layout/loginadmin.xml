@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:facebook="http://schemas.android.com/apk/res-auto"
+             
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#00B8E6"
+android:gravity="center|top" >
+  <EditText
+        android:id="@+id/editText1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"  
+    
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginTop="90dp"
+        android:hint="email Id"
+        android:padding="10dp"
+         android:background="@drawable/login_"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+          android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+    
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/login_"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+
+        <Button
+    		 android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+    		android:textColor="#ffffff"
+    		android:background="#3b5998"/>
+ 
+
+</LinearLayout>

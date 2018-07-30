@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00B8E6"	
+	android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    >
+   <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+              android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+        android:background="@drawable/textinputborder"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="11dp" />
+
+        <EditText
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textinputborder"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:padding="11dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+              android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+        android:background="@drawable/textinputborder"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="11dp" />
+   
+          
+    <Button
+        android:id="@+id/button2"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+        android:padding="11dp"
+        android:text="Register" 
+        />
+
+   
+   
+
+</LinearLayout>

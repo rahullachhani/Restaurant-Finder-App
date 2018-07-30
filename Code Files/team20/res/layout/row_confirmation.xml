@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+     android:layout_margin="5dp"
+ android:layout_marginBottom="10dp"
+ android:layout_marginTop="10dp"
+ 
+        android:background="@drawable/orderbg" 
+         >
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:layout_margin="5dp"
+     android:layout_weight="3"
+         >
+    
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+       
+        android:gravity="center_vertical"
+        android:text="Taaj"
+        android:textColor="@color/Red"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    
+     <TextView
+        android:id="@+id/t3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        
+        android:gravity="center_vertical"
+        android:text="Taaj"
+       
+        android:textSize="15sp"
+        />
+        <TextView
+        android:id="@+id/t2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+       
+        android:gravity="center_vertical"
+        android:text="Taaj"
+        
+        android:textSize="15sp"
+        />
+       
+        
+ </LinearLayout>       
+    <ImageButton
+        android:id="@+id/cnf"
+           android:layout_weight="1.5"
+           android:layout_marginRight="10dp"
+           android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+          	 android:background="@drawable/confirm"
+         />
+
+
+</LinearLayout>

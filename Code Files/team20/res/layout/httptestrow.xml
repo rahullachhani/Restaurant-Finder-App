@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card" >
+
+    <!--
+                       android:paddingLeft="0dp"
+                  android:paddingRight="0dp"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+    -->
+     <TextView
+        android:id="@+id/name"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:text="Hotel"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:text="Mumbai"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divide"
+        style="@style/Divider"
+        android:layout_below="@id/address" />
+
+  <!--   <TextView
+        android:id="@+id/rating"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/rating7"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="3dp"
+        android:text="4.0"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+        --> 
+    <TextView
+            android:id="@+id/rating"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+         
+            android:layout_alignParentRight="true"
+          
+            android:layout_marginRight="19dp"
+           
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle"
+            
+           android:gravity="center"
+          android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            
+            android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divide"
+        android:background="#FE2E2E"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="200 m"
+            android:textAlignment="center"
+             android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+           android:textAlignment="center"
+            android:text="5 likes"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView1"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+             android:textAlignment="center"
+            android:text="7 dislikes" 
+             android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

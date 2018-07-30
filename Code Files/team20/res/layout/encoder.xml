@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/encode_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:fillViewport="true"
+              android:background="@color/encode_view"
+              android:orientation="vertical"
+              android:gravity="center">
+
+  <ImageView android:id="@+id/image_view"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:scaleType="center"
+             android:contentDescription="@string/barcode_image"/>
+ 
+ <LinearLayout
+android:orientation="horizontal"
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+      
+     >
+ <EditText android:id="@+id/et"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+           />  
+           <Button
+           android:id="@+id/b1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:text="Encode"
+               
+               />
+         <!--   <ImageView
+               android:id="@+id/image_share"
+             android:layout_width="100px"
+             android:layout_height="100px"
+             android:layout_gravity="center_horizontal"
+             android:scaleType="center"
+             android:background="@drawable/share1"
+              />
+              
+              -->
+  </LinearLayout>
+ </LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:background="@drawable/bg_card"
+     >
+
+    <!--
+    <com.example.navigation.RoundedImageView
+           xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/image"
+    android:layout_width="300dp" 
+    android:layout_height="240dp" 
+    android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+           />
+			 -->
+
+    <RelativeLayout
+        android:id="@+id/gift_app_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#FF0000"
+        android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:singleLine="true"
+                android:text="rahul"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            
+        </RelativeLayout>
+        <View
+        android:id="@+id/divide"
+        style="@style/Divider"
+        android:layout_below="@id/gift_app_icon" />
+
+        <TextView
+            android:id="@+id/rated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/divide"
+        android:layout_marginLeft="17dp"
+           android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:text="Rated"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 
+                 
+                 android:layout_below="@id/rated"
+                 android:paddingTop="15dp"
+                 android:paddingBottom="5dp"
+        android:text="I love this resstaurant a lot.....the cservice also is very nice and the ambience is awesome...:)"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:paddingLeft="13dp"
+        android:paddingRight="5dp"
+        />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rated"
+                android:layout_marginLeft="47dp"
+                android:layout_toRightOf="@+id/rated"
+                android:paddingLeft="20dp"
+               android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="Yesterday"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+            
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/rated"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:text="4.3"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        
+    </RelativeLayout>
+
+    

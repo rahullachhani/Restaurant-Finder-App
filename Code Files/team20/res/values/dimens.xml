@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="event_list_item_height">500dp</dimen><dimen name="dim_event_divider">3dp</dimen><dimen name="fnt_event_date">20sp</dimen><dimen name="fnt_event_noofdays">15sp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

@@ -1,0 +1,248 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codingc.team20.restofinder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <permission
+         android:name="com.codingc.team20.restofinder.permission.MAPS_RECEIVE"
+         android:protectionLevel="signature"
+             android:configChanges="keyboardHidden|orientation"/>
+  <uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+ <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+       android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+        <receiver
+            android:name="com.codingc.team20.restofinder.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            
+            </intent-filter>
+        </receiver>
+        
+         <receiver
+            android:name="com.codingc.team20.restofinder.NetworkChangeReceiver2"
+            android:label="NetworkChangeReceiver2" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps" />
+         <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+             </activity>
+        <activity
+            android:name=".Restaurant"
+            android:label="@string/app_name" >
+            
+        </activity>
+     
+           <activity
+            android:name=".adminMainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+     
+        
+        <activity
+            android:name=".SearchFragment"
+            android:label="@string/app_name" >
+            
+        </activity>
+      
+          <activity
+            android:name=".search_map"
+            android:label="@string/app_name" >
+            
+        </activity>
+      
+        
+        
+        
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+      
+        <activity
+            android:name=".ShowSearchListActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+      
+        <activity
+            android:name=".sendHTTPData"
+            android:label="@string/app_name" >
+            
+        </activity>
+       
+        <activity
+            android:name=".signup"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+        <activity
+            android:name=".WishListHistory"
+            android:label="@string/app_name" >
+            
+        </activity>
+      
+         <activity
+            android:name=".filterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+           <activity
+            android:name=".FilterActivitySearch"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name=".loginActivity"
+             android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                 
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+         <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" 
+                  android:configChanges="orientation|keyboardHidden"
+                android:screenOrientation="portrait">
+           
+       
+            
+        </activity>
+        
+        <activity
+            android:name=".FullImageActivity"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".FullImageActivityMenu"
+            android:label="@string/app_name" >
+           
+        </activity>
+        
+        
+         <activity android:name=".CaptureActivity"
+            android:label="@string/capture_name"
+            android:icon="@drawable/icon"
+            android:screenOrientation="landscape"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="true">
+                   <intent-filter>
+                <action android:name="CaptureActivity" />
+            
+            </intent-filter>
+       
+          </activity>
+         
+        <activity android:name="com.jwetherell.quick_response_code.DecoderActivity"
+            android:label="@string/decoder_name"
+            android:icon="@drawable/icon"
+            android:screenOrientation="landscape"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity android:name=".EncoderActivity"
+            android:label="@string/encoder_name"
+            android:icon="@drawable/icon"
+            android:screenOrientation="landscape"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:stateNotNeeded="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        
+        
+        
+        
+        
+        <activity android:name="com.facebook.LoginActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+       
+        <provider android:authorities=".app.NativeAppCallContentProvider"
+                  android:name="com.facebook.NativeAppCallContentProvider"
+                  android:exported="true"/>
+        <receiver android:name="com.codingc.team20.restofinder.HelloFacebookBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver>
+        
+       
+        <meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version" 
+    />
+        <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyAHFXPzhrs-vFHKhbQ_oTBHuqXOlITgNz8"/>
+    </application>
+
+
+</manifest>
+ <!--    <action android:name="android.location.PROVIDERS_CHANGED" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                  -->

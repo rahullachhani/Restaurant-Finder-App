@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:facebook="http://schemas.android.com/apk/res-auto"
+             
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#00B8E6"
+android:gravity="center|top" >
+ <EditText
+        android:id="@+id/editText1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"  
+    
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_marginTop="90dp"
+        android:hint="email Id"
+        android:padding="10dp"
+         android:background="@drawable/login_"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+          android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+    
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/login_"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+
+        <Button
+    		 android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"  
+    		android:textColor="#ffffff"
+    		android:background="#3b5998"/>
+           <!-- android:background="@drawable/login" -->
+           
+ 
+        <TextView
+            android:id="@+id/button2"
+            android:layout_marginTop="30dp"
+			
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/register"
+            android:onClick="true"
+            android:textColorHint="#ffffff" />
+        
+        
+        <TextView
+            android:id="@+id/or"
+            android:layout_marginTop="30dp"
+			
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:text="OR"
+            android:onClick="true"
+            android:textColorHint="#ffffff" />
+       
+        
+  <com.facebook.widget.LoginButton
+         android:layout_marginTop="60dp"
+			
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                facebook:confirm_logout="false"
+                facebook:fetch_user_info="true"
+                />
+    
+  
+ <!-- 
+       <ImageView
+                    android:id="@+id/profpic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                />
+                -->
+ 
+</LinearLayout>
